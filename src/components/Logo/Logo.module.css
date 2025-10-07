@@ -1,0 +1,11 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.logo {
+  color: #fff;
+}
+.logotext {
+  color: #fff;
+}
