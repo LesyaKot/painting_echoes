@@ -9,12 +9,14 @@ import bridge from "../../assets/bridge.jpg";
 export default function GalleryItem() {
   return (
     <div className={css.wrap}>
-      <img className={css.img} src={sheep} alt={sheep} />
-      <img className={css.img} src={tent} alt={tent} />
-      <img className={css.img} src={castle} alt={castle} />
-      <img className={css.img} src={house} alt={house} />
-      <img className={css.img} src={lake} alt={lake} />
-      <img className={css.img} src={bridge} alt={bridge} />
+      <div className={css.gallery}>
+        <img className={css.img} src={castle} alt={castle} />
+        <img className={css.img} src={house} alt={house} />
+        <img className={css.img} src={sheep} alt={sheep} />
+        <img className={css.img} src={tent} alt={tent} />
+        <img className={css.img} src={lake} alt={lake} />
+        <img className={css.img} src={bridge} alt={bridge} />
+      </div>
     </div>
   );
 }

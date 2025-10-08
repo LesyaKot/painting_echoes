@@ -1,4 +1,4 @@
-.wrapper {
+.wrap {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -14,6 +14,8 @@
   text-decoration: none;
   transition: transform 160ms ease, opacity 160ms ease;
   opacity: 0.95;
+  fill: #fff;
+  color: #fff;
 }
 
 .link:hover,
@@ -26,10 +28,13 @@
 .icon {
   display: block;
   vector-effect: non-scaling-stroke;
+  stroke: #fff;
+  fill: none;
+  color: currentColor;
 }
 
 @media (max-width: 480px) {
-  .wrapper {
+  .wrap {
     gap: 10px;
   }
 }

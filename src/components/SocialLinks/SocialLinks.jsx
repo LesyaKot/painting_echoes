@@ -1,11 +1,7 @@
 import React from "react";
 import css from "./SocialLinks.module.css";
 
-export default function SocialLinks({
-  links = {},
-  size = 24,
-  color = "currentColor",
-}) {
+export default function SocialLinks({ links = {}, size = 20, color = "#fff" }) {
   const { instagram, telegram, facebook, email } = links;
 
   const commonProps = {
@@ -73,6 +69,8 @@ export default function SocialLinks({
         <a
           className={css.link}
           href={`mailto:${email}`}
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Email"
           title="Email"
         >

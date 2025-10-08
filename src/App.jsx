@@ -1,5 +1,3 @@
-// import { useState } from 'react'
-
 import "./App.css";
 import Logo from "./components/Logo/Logo";
 import Gallery from "./components/Gallery/Gallery";
@@ -8,11 +6,13 @@ import Hero from "./components/Hero/Hero";
 
 export default function App() {
   return (
-    <>
-      <Logo />
-      <Header />
+    <div>
+      <div class="wrapper">
+        <Logo />
+        <Header />
+      </div>
       <Hero />
       <Gallery />
-    </>
+    </div>
   );
 }

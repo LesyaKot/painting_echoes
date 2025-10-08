@@ -5,7 +5,14 @@
 }
 .logo {
   color: #fff;
+  font-size: 32px;
+  line-height: 1.7;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  font-style: italic;
 }
+
 .logotext {
   color: #fff;
+  font-family: "Playfair Display", serif;
 }
