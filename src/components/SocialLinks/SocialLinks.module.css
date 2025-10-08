@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, opacity 160ms ease;
+  opacity: 0.95;
+}
+
+.link:hover,
+.link:focus {
+  transform: translateY(-3px);
+  opacity: 1;
+  outline: none;
+}
+
+.icon {
+  display: block;
+  vector-effect: non-scaling-stroke;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    gap: 10px;
+  }
+}
