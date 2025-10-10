@@ -4,9 +4,9 @@ const Data = {
   AboutEmailSubject: "New artwork inquiry",
   AboutHeading: "About Me",
   AboutTextParagraph1:
-    "As a visual artist, I explore the harmony between nature and human design. My impressionistic landscapes and architectural scenes invite viewers to slow down, breathe, and see beauty in simplicity.",
+    " Through impressionistic shades of gray and pastel, I capture nature’s          fog and the quiet beauty of aged walls.",
   AboutTextParagraph2:
-    " Emotions in color. Silence in motion. Art as a quiet reflection of life.",
+    " My name is Olha Kotkova — a Ukrainian artist and trained architect. I merge architectural precision with artistic intuition to explore the dialogue between space, form, and emotion — blending structure with creativity. Drawing has never been just a hobby for me — it is my passion and voice. Every color, every line, every composition reflects my inner landscape. My works are not simply images; they are fragments of my emotions, memories, and reflections of the world around me.",
   AboutButtonText: "Say Hey!",
 };
 
