@@ -1,11 +1,12 @@
 .wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: center;
-  gap: 60px;
+  gap: 120px;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 60px;
   margin-bottom: 24px;
 }
 .textSocialsWrap {
@@ -22,6 +23,7 @@
   line-height: 1.9;
   font-family: "Playfair Display", serif;
   text-align: left;
+  width: 600px;
 }
 
 .photo2 {

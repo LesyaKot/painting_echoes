@@ -4,9 +4,7 @@
   justify-content: space-between;
   text-align: center;
   gap: 60px;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  min-height: 100vh;
 }
 
 .headerWrap {
@@ -19,17 +17,20 @@
 .aboutWrap {
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
   text-align: center;
-  gap: 60px;
+  /* gap: 60px; */
   padding-top: 24px;
   padding-bottom: 24px;
+  flex: 1;
 }
 
 .textWrap {
   display: flex;
   flex-direction: column;
+  width: 700px;
+  padding-left: 24px;
+  padding-right: 204px;
 }
 
 .title {
@@ -50,16 +51,26 @@
 .imageWrap {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
+
 .img {
   border-radius: 4px;
-  width: 420px;
-  height: 320px;
+  /* width: 420px;
+  height: 320px; */
+  width: 65%;
 }
 
 .btn {
-  width: 80px;
-  height: 40px;
-  background-color: blueviolet;
+  border: none;
+  background-color: tomato;
+  border-radius: 8px;
   color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 12px 24px;
 }

@@ -1,6 +1,15 @@
+.pageWrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
 .wrap {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }

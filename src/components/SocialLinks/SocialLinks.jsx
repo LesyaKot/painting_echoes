@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./SocialLinks.module.css";
 
 export default function SocialLinks({ links = {}, size = 20, color = "#fff" }) {

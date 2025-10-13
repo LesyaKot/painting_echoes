@@ -36,7 +36,6 @@ export default function About() {
           )}
         </div>
         <div className={css.textWrap}>
-          <h1 className={css.title}>{data.AboutHeading}</h1>
           <p className={css.text}>{data.AboutTextParagraph1}</p>
           <p className={css.text}>{data.AboutTextParagraph2}</p>
           <button className={css.btn} onClick={handleClick}>
