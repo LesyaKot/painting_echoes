@@ -4,12 +4,14 @@
   min-height: 100vh;
 }
 
-.main {
-  flex: 1;
-}
-
 .wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.main {
+  flex: 1;
 }

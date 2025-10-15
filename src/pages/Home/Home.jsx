@@ -2,6 +2,7 @@ import Logo from "../../components/Logo/Logo";
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import Footer from "../../pages/Footer/Footer";
+import GalleryItem from "../../components/GalleryItem/GalleryItem";
 import css from "./Home.module.css";
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
         <Header />
       </div>
       <main className={css.main}>
-        <Hero />
+        {/* <Hero /> */}
+        <GalleryItem />
       </main>
       <Footer />
     </div>
