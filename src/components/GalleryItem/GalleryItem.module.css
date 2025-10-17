@@ -1,27 +1,82 @@
 .wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 28px;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 24px;
-}
-.gallery {
-  column-count: 3;
-  column-gap: 20px;
-}
-.img {
-  width: 100%;
-  display: block;
-  margin-bottom: 16px;
-  border-radius: 4px;
-  break-inside: avoid;
+  padding: 20px;
 }
 
-@media (max-width: 900px) {
+.gallery {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+.img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+}
+
+.img:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: zoom-out;
+}
+
+.enlarged {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  animation: zoomIn 0.25s ease;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 32px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 1010;
+}
+
+.navButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.left {
+  left: 40px;
+}
+
+.right {
+  right: 40px;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
   .gallery {
     column-count: 2;
   }
@@ -30,5 +85,10 @@
 @media (max-width: 600px) {
   .gallery {
     column-count: 1;
+  }
+  .navButton {
+    font-size: 24px;
+    left: 20px;
+    right: 20px;
   }
 }
