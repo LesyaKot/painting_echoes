@@ -1,0 +1,25 @@
+.btn {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.wrap:hover {
+  transform: scale(1.2);
+}
+
+.dark {
+  background-color: #1e1e1e;
+  color: #ededed;
+}
+
+.light {
+  background-color: #f5f5f5;
+  color: #1e1e1e;
+}

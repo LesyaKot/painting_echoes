@@ -8,7 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .aboutWrap {
@@ -42,7 +43,7 @@
 }
 
 .text {
-  color: #fff;
+  /* color: #fff; */
   font-size: 18px;
   line-height: 1.8;
   font-family: "Playfair Display", serif;

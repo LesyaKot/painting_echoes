@@ -4,7 +4,7 @@
   text-align: left;
 }
 .logo {
-  color: #fff;
+  /* color: #fff; */
   font-size: 32px;
   line-height: 1.7;
   font-family: "Playfair Display", serif;
@@ -13,6 +13,6 @@
 }
 
 .logotext {
-  color: #fff;
+  /* color: #fff; */
   font-family: "Playfair Display", serif;
 }

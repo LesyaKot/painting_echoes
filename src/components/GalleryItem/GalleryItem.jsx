@@ -8,11 +8,26 @@ import lake from "../../assets/lake.jpg";
 import bridge from "../../assets/bridge.jpg";
 import river from "../../assets/river.jpg";
 import village from "../../assets/village.jpg";
+import church from "../../assets/church.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useContext } from "react";
+import ThemeContext from "../../ThemeContext.jsx";
 
 export default function GalleryItem() {
-  const images = [castle, house, sheep, tent, river, bridge, lake, village];
+  const { theme } = useContext(ThemeContext);
   const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const images = [
+    castle,
+    house,
+    sheep,
+    tent,
+    river,
+    bridge,
+    lake,
+    village,
+    church,
+  ];
 
   const handleClick = (index) => setSelectedIndex(index);
   const handleClose = () => setSelectedIndex(null);
@@ -38,7 +53,7 @@ export default function GalleryItem() {
   }, []);
 
   return (
-    <div className={css.wrap}>
+    <div className={`${css.wrap} ${theme === "light" ? css.light : css.dark}`}>
       <div className={css.gallery}>
         {images.map((img, index) => (
           <img

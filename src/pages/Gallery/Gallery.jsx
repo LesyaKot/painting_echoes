@@ -1,4 +1,4 @@
-import GalleryItem from "../../components/Gallery/Gallery";
+import GalleryItem from "../../components/GalleryItem/GalleryItem";
 
 export default function Gallery() {
   return <GalleryItem />;
