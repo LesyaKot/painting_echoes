@@ -48,6 +48,11 @@ export default function Header() {
               About me
             </Link>
           </li>
+          <li className={css.listItem}>
+            <Link to="/process" onClick={() => setMenuOpen(false)}>
+              Painting Process
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

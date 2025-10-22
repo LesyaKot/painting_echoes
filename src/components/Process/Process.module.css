@@ -1,0 +1,17 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 60px;
+  padding: 24px 60px;
+  text-align: left;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 16px;
+  width: 600px;
+}
