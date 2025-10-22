@@ -50,7 +50,7 @@ export default function Header() {
           </li>
           <li className={css.listItem}>
             <Link to="/process" onClick={() => setMenuOpen(false)}>
-              Painting Process
+              Process
             </Link>
           </li>
         </ul>
