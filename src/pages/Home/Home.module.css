@@ -6,12 +6,38 @@
 
 .wrap {
   display: flex;
+  flex-direction: row;
+  align-content: center;
   justify-content: space-between;
   align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main {
   flex: 1;
+}
+
+.main {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrap {
+    /* display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px; */
+  }
 }

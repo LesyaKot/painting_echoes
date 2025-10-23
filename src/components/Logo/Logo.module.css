@@ -3,16 +3,24 @@
   flex-direction: column;
   text-align: left;
 }
+
 .logo {
-  /* color: #fff; */
-  font-size: 32px;
+  font-size: 20px;
   line-height: 1.7;
   font-family: "Playfair Display", serif;
   letter-spacing: 1px;
   font-style: italic;
 }
 
-.logotext {
-  /* color: #fff; */
-  font-family: "Playfair Display", serif;
+@media (min-width: 768px) {
+  .logo {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo {
+    font-size: 28px;
+  }
 }

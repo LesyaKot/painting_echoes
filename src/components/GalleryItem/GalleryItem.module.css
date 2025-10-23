@@ -3,7 +3,7 @@
 }
 
 .gallery {
-  column-count: 3;
+  column-count: 1;
   column-gap: 16px;
 }
 
@@ -41,7 +41,7 @@
 
 .navButton {
   position: absolute;
-  top: 50%;
+  top: 90%;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.2);
   border: none;
@@ -77,22 +77,6 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .gallery {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery {
-    column-count: 1;
-  }
-  .navButton {
-    font-size: 24px;
-    left: 20px;
-    right: 20px;
-  }
-}
 .light {
   background-color: #f4f1ec;
   color: #1e1e1e;
@@ -113,4 +97,20 @@
 
 .dark .gallery img:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+  .navButton {
+    font-size: 24px;
+    top: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gallery {
+    column-count: 4;
+  }
 }
