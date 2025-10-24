@@ -35,7 +35,9 @@
 
 @media (min-width: 1440px) {
   .btn {
-    top: 40px;
-    right: 10px;
+    /* top: 40px;
+    right: 10px; */
+    top: 25px;
+    right: 15px;
   }
 }

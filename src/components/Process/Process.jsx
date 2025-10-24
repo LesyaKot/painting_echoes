@@ -11,8 +11,8 @@ export default function Process() {
         loop
         playsInline
         className={css.video}
-        width={420}
-        height={500}
+        // width={420}
+        // height={500}
       />
 
       <p className={css.text}>

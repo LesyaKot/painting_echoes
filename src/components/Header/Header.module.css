@@ -21,6 +21,12 @@
   cursor: pointer;
   z-index: 1001;
   margin-right: 40px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav {
@@ -69,4 +75,14 @@ a {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
 }
