@@ -59,11 +59,15 @@
 }
 
 .left {
-  left: 40px;
+  /* left: 40px; */
+  left: 60px;
+  top: 85%;
 }
 
 .right {
-  right: 40px;
+  /* right: 40px; */
+  right: 60px;
+  top: 85%;
 }
 
 @keyframes zoomIn {

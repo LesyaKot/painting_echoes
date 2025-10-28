@@ -11,7 +11,7 @@ export default function PaintingProcess() {
         <Logo />
         <Header />
       </div>
-      <Process />;
+      <Process />
       <Footer />
     </>
   );
