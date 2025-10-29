@@ -68,3 +68,10 @@ textarea {
 .btn:focus {
   background-color: #b1bda2;
 }
+
+@media (min-width: 768px) {
+  .modal {
+    padding: 32px;
+    border-radius: 8px;
+  }
+}
