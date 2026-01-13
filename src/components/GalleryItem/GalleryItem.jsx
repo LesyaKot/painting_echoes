@@ -7,6 +7,7 @@ import house from "../../assets/house.jpg";
 import lake from "../../assets/lake.jpg";
 import bridge from "../../assets/bridge.jpg";
 import river from "../../assets/river.jpg";
+import greengarden from "../../assets/greengarden.jpeg";
 import village from "../../assets/village.jpg";
 import church from "../../assets/church.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -22,6 +23,7 @@ export default function GalleryItem() {
     house,
     sheep,
     tent,
+    greengarden,
     river,
     bridge,
     lake,
