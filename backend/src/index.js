@@ -4,7 +4,12 @@ import cors from 'cors';
 console.log('Server file loaded');
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: '*',
+  }),
+);
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Backend alive 🚀' });
