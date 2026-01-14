@@ -29,7 +29,6 @@ export default function Home() {
     <div className={css.pageWrap}>
       <div className={css.wrap}>
         <Logo />
-        <h1>Test</h1>
         <Header />
       </div>
       <main className={css.main}>

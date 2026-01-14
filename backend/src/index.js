@@ -4,19 +4,25 @@ import cors from 'cors';
 console.log('Server file loaded');
 
 const app = express();
-// app.use(cors());
+
 app.use(
   cors({
-    origin: '*',
+    origin: [
+      'http://localhost:5173',
+      'https://painting-echoes.vercel.app',
+      'https://www.painting-echoes.vercel.app',
+    ],
   }),
 );
 
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Backend alive 🚀' });
+  res.json({ status: 'ok' });
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
+
+app.use(express.json());
