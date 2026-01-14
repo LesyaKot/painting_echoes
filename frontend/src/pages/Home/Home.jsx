@@ -1,11 +1,11 @@
-import Logo from "../../components/Logo/Logo";
-import Header from "../../components/Header/Header";
-import Hero from "../../components/Hero/Hero";
-import Footer from "../../pages/Footer/Footer";
-import GalleryItem from "../../components/GalleryItem/GalleryItem";
-import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
-import { useEffect, useState } from "react";
-import css from "./Home.module.css";
+import Logo from '../../components/Logo/Logo';
+import Header from '../../components/Header/Header';
+import Hero from '../../components/Hero/Hero';
+import Footer from '../../pages/Footer/Footer';
+import GalleryItem from '../../components/GalleryItem/GalleryItem';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
+import { useEffect, useState } from 'react';
+import css from './Home.module.css';
 
 export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
@@ -19,9 +19,9 @@ export default function Home() {
       }
     };
 
-    window.addEventListener("scroll", checkScrollTop);
+    window.addEventListener('scroll', checkScrollTop);
     return () => {
-      window.removeEventListener("scroll", checkScrollTop);
+      window.removeEventListener('scroll', checkScrollTop);
     };
   }, [showScroll]);
 
@@ -29,6 +29,7 @@ export default function Home() {
     <div className={css.pageWrap}>
       <div className={css.wrap}>
         <Logo />
+        <h1>Test</h1>
         <Header />
       </div>
       <main className={css.main}>
