@@ -20,6 +20,7 @@
 
 .name {
   color: #b1bda2;
+  color: #4c2917;
   font-weight: 600;
 }
 
@@ -39,6 +40,7 @@
 
 .dark .name {
   color: #b1bda2;
+  color: #4c2917;
 }
 
 .dark .right a {
@@ -47,6 +49,7 @@
 
 .dark .right a:hover {
   color: #b1bda2;
+  color: #4c2917;
   transform: translateY(-2px);
 }
 
@@ -59,6 +62,7 @@
 
 .light .name {
   color: #70825a;
+  color: #4c2917;
 }
 
 .light .right a {
@@ -114,6 +118,7 @@
 
   .right a:hover {
     color: #b1bda2;
+    color: #4c2917;
     transform: translateY(-2px);
   }
 }
