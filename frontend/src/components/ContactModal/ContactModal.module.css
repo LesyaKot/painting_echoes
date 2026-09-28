@@ -53,6 +53,7 @@ textarea {
 
 .btn {
   background-color: #889b82;
+  background-color: #332c28;
   color: white;
   border: none;
   padding: 20px;
@@ -62,11 +63,13 @@ textarea {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0 4px 8px rgba(107, 142, 35, 0.3);
+  box-shadow: 0 4px 8px #eae6df;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: #b1bda2;
+  background-color: #4c2917;
 }
 
 @media (min-width: 768px) {

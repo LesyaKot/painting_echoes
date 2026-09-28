@@ -14,7 +14,7 @@
 .title {
   font-weight: 800px;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .hamburger {
@@ -40,6 +40,10 @@
   background-color: #222831;
   background-color: #5a6b56;
   background-color: #889b82;
+  background-color: #3e2720;
+  background-color: #29362f;
+  background-color: #332c28;
+
   padding: 0;
   justify-content: center;
   align-items: center;

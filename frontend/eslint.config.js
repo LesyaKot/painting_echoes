@@ -5,10 +5,8 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
-  // глобальні ігнори
   globalIgnores(['dist']),
 
-  // React
   {
     files: ['**/*.{js,jsx}'],
     extends: [
@@ -30,9 +28,8 @@ export default defineConfig([
     },
   },
 
-  // Node.js код
   {
-    files: ['src/**/*.js'], // тут можна змінити на свій шлях до бекендових файлів
+    files: ['src/**/*.js'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.node,

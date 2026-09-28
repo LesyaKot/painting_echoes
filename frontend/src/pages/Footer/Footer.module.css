@@ -1,5 +1,6 @@
 .footer {
-  color: #f5f5f5;
+  /* color: #f5f5f5; */
+  color: rgba(255, 255, 255, 0.4);
   padding: 40px 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
@@ -26,7 +27,9 @@
   color: #f5f5f5;
   margin-left: 16px;
   font-size: 22px;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .dark {
@@ -48,7 +51,8 @@
 }
 
 .light {
-  background-color: #f4f1ec;
+  /* background-color: #f4f1ec; */
+  background-color: rgba(255, 255, 255, 0.4);
   color: #1e1e1e;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -63,6 +67,7 @@
 
 .light .right a:hover {
   color: #70825a;
+  color: #4c2917;
   transform: translateY(-2px);
 }
 
@@ -102,7 +107,9 @@
     color: #f5f5f5;
     margin-left: 16px;
     font-size: 22px;
-    transition: color 0.3s ease, transform 0.2s ease;
+    transition:
+      color 0.3s ease,
+      transform 0.2s ease;
   }
 
   .right a:hover {
