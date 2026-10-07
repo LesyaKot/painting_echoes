@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .headerWrap {
@@ -14,6 +17,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
 .aboutWrap {
   display: flex;
   flex-direction: column;
@@ -36,8 +40,13 @@
 .img {
   border-radius: 8px;
   width: auto;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
+}
+
+.video {
+  width: 360px;
+  height: auto;
 }
 
 .textWrap {
@@ -45,29 +54,50 @@
 }
 
 .text {
-  font-size: 12px;
-  line-height: 1.6;
-  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  line-height: 1.8;
   margin: 0;
+  text-align: justify;
+}
+
+.dark .text {
+  color: #ededed;
+}
+
+.light .text {
+  color: #222916;
+}
+
+.light {
+  background-color: #bebbaf !important;
+}
+
+.dark {
+  background-color: #222916 !important;
 }
 
 .btn {
   width: 160px;
   height: 40px;
   border: none;
-  background-color: #889b82;
-  background-color: #332c28;
+  background-color: #481911;
+  /* background-color: #5e3d20; */
+  /* background-color: #94724a; */
+  /* background-color: #7d7f59; */
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
   font-size: 1em;
   font-weight: 400;
   align-self: flex-start;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 48px;
+  margin-bottom: 24px;
   transition: all 0.3s ease;
-  /* box-shadow: 0 4px 8px rgba(107, 142, 35, 0.3); */
-  box-shadow: 0 4px 8px #eae6df;
+  box-shadow: 0 2px 4px #eae6df;
+}
+
+.wrap::before {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -119,7 +149,7 @@
   .img {
     border-radius: 8px;
     width: auto;
-    height: 250px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -130,16 +160,14 @@
   }
 
   .text {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.6;
-    font-family: 'Playfair Display', serif;
   }
 
   .btn {
-    width: 160px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     border: none;
-    /* background-color: #889b82; */
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
@@ -149,6 +177,5 @@
     margin-top: 20px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
-    /* box-shadow: 0 4px 8px rgba(107, 142, 35, 0.3); */
   }
 }

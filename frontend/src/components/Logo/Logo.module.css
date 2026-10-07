@@ -7,11 +7,20 @@
 .logo {
   font-size: 20px;
   line-height: 1.7;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   font-style: italic;
+  color: #fff;
 }
 
+.dark .logo:hover {
+  color: #a4b285 !important;
+}
+
+.light .logo:hover {
+  /* color: #a4b285 !important; */
+  color: #481911 !important;
+}
 @media (min-width: 768px) {
   .logo {
     font-size: 22px;

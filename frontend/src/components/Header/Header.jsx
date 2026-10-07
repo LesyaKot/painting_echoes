@@ -1,23 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Squash as Hamburger } from "hamburger-react";
-import css from "./Header.module.css";
-import data from "../Data";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Squash as Hamburger } from 'hamburger-react';
+import css from './Header.module.css';
+import data from '../Data';
+import leaf from '../../assets/leaf.png';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLight, setIsLight] = useState(() => {
-    return localStorage.getItem("theme") === "light";
+    return localStorage.getItem('theme') === 'light';
   });
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
-      const isLightNow = document.body.classList.contains("light-theme");
+      const isLightNow = document.body.classList.contains('light');
       setIsLight(isLightNow);
     });
     observer.observe(document.body, {
       attributes: true,
-      attributeFilter: ["class"],
+      attributeFilter: ['class'],
     });
     return () => observer.disconnect();
   }, []);
@@ -32,11 +33,11 @@ export default function Header() {
         <Hamburger
           toggled={menuOpen}
           toggle={setMenuOpen}
-          color={isLight ? "#1e1e1e" : "#ffffff"}
+          color={isLight ? '#1e1e1e' : '#ffffff'}
         />
       </div>
 
-      <nav className={`${css.nav} ${menuOpen ? css.navOpen : ""}`}>
+      <nav className={`${css.nav} ${menuOpen ? css.navOpen : ''}`}>
         <ul className={css.list}>
           <li className={css.listItem}>
             <Link to="/" onClick={() => setMenuOpen(false)}>
@@ -54,6 +55,9 @@ export default function Header() {
             </Link>
           </li>
         </ul>
+        <div className={css.imagewrap}>
+          <img src={leaf} alt="Artist" className={css.img} />
+        </div>
       </nav>
     </div>
   );

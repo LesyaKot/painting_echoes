@@ -1,18 +1,22 @@
-import { useContext } from "react";
-import ThemeContext from "../../ThemeContext";
-import css from "./Footer.module.css";
-import { FaInstagram, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
+import { useContext } from 'react';
+import ThemeContext from '../../ThemeContext';
+import karakul4 from '../../assets/karakul4.svg';
+import css from './Footer.module.css';
+import { FaInstagram, FaTelegramPlane, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   const { theme } = useContext(ThemeContext);
 
   return (
     <footer
-      className={`${css.footer} ${theme === "dark" ? css.dark : css.light}`}
+      className={`${css.footer} ${theme === 'dark' ? css.dark : css.light}`}
     >
       <div className={css.container}>
         <div className={css.left}>
           <p>© {new Date().getFullYear()} Echoes of My Soul</p>
+        </div>
+        <div className={css.imgwrap}>
+          <img src={karakul4} alt="Artist" className={css.img} />
         </div>
         <div className={css.right}>
           <a

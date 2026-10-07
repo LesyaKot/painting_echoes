@@ -1,20 +1,23 @@
-import { useState } from "react";
-import Header from "../../components/Header/Header";
-import Logo from "../../components/Logo/Logo";
-import Footer from "../Footer/Footer";
-import ContactModal from "../../components/ContactModal/ContactModal";
-import css from "./About.module.css";
+import { useState } from 'react';
+import Header from '../../components/Header/Header';
+import Logo from '../../components/Logo/Logo';
+import Footer from '../Footer/Footer';
+import ContactModal from '../../components/ContactModal/ContactModal';
+import css from './About.module.css';
+import { useContext } from 'react';
+import ThemeContext from '../../ThemeContext';
 
-const images = import.meta.glob("/src/assets/profile.{webp,png,jpg,jpeg,gif}", {
+const images = import.meta.glob('/src/assets/profile.{webp,png,jpg,jpeg,gif}', {
   eager: true,
 });
 const profileImage = Object.values(images)[0]?.default || null;
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={css.wrap}>
+    <div className={`${css.wrap} ${theme === 'dark' ? css.dark : css.light}`}>
       <div className={css.headerWrap}>
         <Logo />
         <Header />
@@ -29,7 +32,7 @@ export default function About() {
 
         <div className={css.textWrap}>
           <p className={css.text}>
-            {" "}
+            {' '}
             My name is Olha Kotkova — a Ukrainian artist and trained architect.
             I merge architectural precision with artistic intuition to explore
             the dialogue between space, form, and emotion — blending structure

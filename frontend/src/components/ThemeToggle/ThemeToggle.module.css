@@ -1,6 +1,6 @@
 .btn {
   position: absolute;
-  top: 30px;
+  top: 43px;
   right: 5px;
   font-size: 26px;
   background: none;
@@ -28,14 +28,14 @@
 
 @media (min-width: 768px) {
   .btn {
-    top: 30px;
+    top: 55px;
     right: 20px;
   }
 }
 
 @media (min-width: 1440px) {
   .btn {
-    top: 40px;
+    top: 55px;
     right: 10px;
   }
 }

@@ -5,6 +5,7 @@ import Footer from '../../pages/Footer/Footer';
 import GalleryItem from '../../components/GalleryItem/GalleryItem';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 import { useEffect, useState } from 'react';
+import karakul5 from '../../assets/karakul5.svg';
 import css from './Home.module.css';
 
 export default function Home() {
@@ -29,6 +30,8 @@ export default function Home() {
     <div className={css.pageWrap}>
       <div className={css.wrap}>
         <Logo />
+
+        <img src={karakul5} alt="Artist" className={css.img} />
         <Header />
       </div>
       <main className={css.main}>

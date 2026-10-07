@@ -1,22 +1,53 @@
 body.dark-theme {
-  background-color: #1e1e1e;
+  background-color: #352e1f;
+  background-color: #222916;
   color: #ededed;
   font-family: 'Playfair Display', serif;
 }
 
-body.light-theme {
-  /* background-color: #f4f1ec;  */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4 {
+  color: #ccb693;
+}
 
-  background: rgba(255, 255, 255, 0.4);
-  /* backdrop-filter: blur(10px); */
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  /* color: #1e1e1e; */
-  color: #332c28;
-  font-family: 'Playfair Display', serif;
+body.dark-theme p.subtitle,
+body.dark-theme .text-muted {
+  color: #787350;
+}
+
+body.light-theme {
+  background-color: #bebbaf;
+  /* background-color: #7d7f59; */
+}
+
+body.light-theme {
+  background-color: #bebbaf;
+  background-image: url('../../frontend/src/assets/leaf.png');
+  background-repeat: no-repeat;
+  background-position: right bottom 20px;
+  background-size: 100px auto;
+  background-attachment: fixed;
+  color: #ededed;
+  z-index: 999999;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4 {
+  color: #5e3d20;
+}
+
+body.light-theme p.subtitle,
+body.light-theme .text-muted {
+  color: #787350;
 }
 
 :root {
-  background-color: #1e1e1e;
+  /* background-color: #352e1f; */
+  background-color: #222916 !important;
   font-family: 'Playfair Display', serif;
   height: 100%;
   margin: 0;
@@ -40,4 +71,36 @@ body {
 
 main {
   flex: 1;
+}
+
+button,
+.btn {
+  background-color: #481911;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #94724a;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+body.dark-theme a {
+  color: #ccb693;
+}
+
+body.light-theme a {
+  color: #5e3d20;
+}
+
+a:hover {
+  color: #94724a !important;
 }
