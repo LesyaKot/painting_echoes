@@ -1,18 +1,19 @@
-import { useState, useEffect } from "react";
-import css from "./GalleryItem.module.css";
-import sheep from "../../assets/sheep.jpg";
-import tent from "../../assets/tent.jpg";
-import castle from "../../assets/castle.jpg";
-import house from "../../assets/house.jpg";
-import lake from "../../assets/lake.jpg";
-import bridge from "../../assets/bridge.jpg";
-import river from "../../assets/river.jpg";
-import greengarden from "../../assets/greengarden.jpeg";
-import village from "../../assets/village.jpg";
-import church from "../../assets/church.jpg";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { useContext } from "react";
-import ThemeContext from "../../ThemeContext.jsx";
+import { useState, useEffect } from 'react';
+import css from './GalleryItem.module.css';
+import sheep from '../../assets/sheep.jpg';
+import tent from '../../assets/tent.jpg';
+import castle from '../../assets/castle.jpg';
+import house from '../../assets/house.jpg';
+import lake from '../../assets/lake.jpg';
+import bridge from '../../assets/bridge.jpg';
+import river from '../../assets/river.jpg';
+import greengarden from '../../assets/greengarden.jpeg';
+import village from '../../assets/village.jpg';
+import bells from '../../assets/bells.jpg';
+import church from '../../assets/church.jpg';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { useContext } from 'react';
+import ThemeContext from '../../ThemeContext.jsx';
 
 export default function GalleryItem() {
   const { theme } = useContext(ThemeContext);
@@ -29,6 +30,7 @@ export default function GalleryItem() {
     lake,
     village,
     church,
+    bells,
   ];
 
   const handleClick = (index) => setSelectedIndex(index);
@@ -46,16 +48,16 @@ export default function GalleryItem() {
 
   useEffect(() => {
     const handleEsc = (e) => {
-      if (e.key === "Escape") handleClose();
-      if (e.key === "ArrowRight") handleNext(e);
-      if (e.key === "ArrowLeft") handlePrev(e);
+      if (e.key === 'Escape') handleClose();
+      if (e.key === 'ArrowRight') handleNext(e);
+      if (e.key === 'ArrowLeft') handlePrev(e);
     };
-    window.addEventListener("keydown", handleEsc);
-    return () => window.removeEventListener("keydown", handleEsc);
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
   }, []);
 
   return (
-    <div className={`${css.wrap} ${theme === "light" ? css.light : css.dark}`}>
+    <div className={`${css.wrap} ${theme === 'light' ? css.light : css.dark}`}>
       <div className={css.gallery}>
         {images.map((img, index) => (
           <img

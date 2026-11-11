@@ -1,4 +1,5 @@
 import fallprep from '../../../public/video/fallprep.mp4';
+import process2 from '../../../public/video/process2.mp4';
 import paint from '../../../public/video/paint.mp4';
 import css from './Process.module.css';
 
@@ -16,11 +17,26 @@ export default function Process() {
         />
 
         <p className={css.text}>
-          {/* Art is how warm, carefree summers find their way back to me. */}
           Painting for me is a dialogue with silence. Every brushstroke is a
           step inward, where colors become feelings.
         </p>
       </div>
+
+      <div className={css.wrapPart}>
+        <video
+          src={process2}
+          controls
+          muted
+          loop
+          playsInline
+          className={css.video}
+        />
+
+        <p className={css.text}>
+          Art is how warm, carefree summers find their way back to me.
+        </p>
+      </div>
+
       <div className={css.wrapPart}>
         <video
           src={fallprep}
