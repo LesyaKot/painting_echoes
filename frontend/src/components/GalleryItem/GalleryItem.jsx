@@ -9,7 +9,7 @@ import bridge from '../../assets/bridge.jpg';
 import river from '../../assets/river.jpg';
 import greengarden from '../../assets/greengarden.jpeg';
 import village from '../../assets/village.jpg';
-import bells from '../../assets/bells.jpg';
+import bells from '../../assets/bells.JPG';
 import church from '../../assets/church.jpg';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useContext } from 'react';
